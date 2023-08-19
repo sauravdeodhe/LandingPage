@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.contanier{
+    width: 100%;
+    height: 100vh;
+    background: url(BG.png);
+    background-position: top;
+    background-size: cover;
+}
+.contanier nav{
+    width: 90%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contanier nav .logo{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #ec906e;
+    font-weight: bolder;
+    font-family: sans-serif;
+    
+}
+.contanier nav ul li{
+    display: inline-block;
+    margin-left: 35px;
+    position: relative;
+}
+.contanier nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.contanier nav ul li::after{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background-color: #fff;
+    width: 0%;
+    height: 2px;
+    transition: 0.3s;
+}
+.contanier nav ul li:hover::after,
+.contanier nav ul li.active::after{
+    width: 100%;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    transform: translateY(-50%);
+    width: 50%;
+}
+.content h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.content p{
+    color: #eaeaea;
+    line-height: 1.7;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+}
+.content .btn{
+    padding: 15px 25px;
+    background-color: #ec2a18;
+    color: #fff;
+    border-radius: 30px;
+    text-transform: capitalize;
+    border: 1px solid #ef8653;
+    transition: 0.4s;
+
+}
+.content .btn:hover{
+    background-color: transparent;
+    color: #ef8653;
+}
+
+.social-links{
+    position: absolute;
+    bottom: 50px;
+    left: 6%;
+}
+.social-links a i{
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 10px;
+    transition: 0.4s;
+}
+.social-links a i:hover{
+    background-color: #ef8653;
+}
